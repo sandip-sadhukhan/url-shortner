@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortner</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- 
+        Colors 
+        bg - #2ecc71
+        fontcolor - #fff - 90% 
+     -->
+
+    <section id="main">
+        <div class="wrapper">
+            <div class="title">URL Shortner</div>
+            <div class="copyright">Developed by Sandip Sadhukhan.</div>
+            <div class="form">
+                <input type="text" class="form-control" id="urlinput" placeholder="Paste your url...">
+                <button type="submit" class="btn" id="submitbtn">Submit</button>
+            </div>
+            <table class="table">
+                <tr id="td-table">
+                </tr>
+            </table>
+            
+        </div>
+    </section>
+
+    <script src="{% static 'js/script.js' %}"></script>
+     
+</body>
+</html>
